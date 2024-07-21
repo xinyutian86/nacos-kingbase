@@ -238,8 +238,6 @@ public class ConfigInfoMapperByKingbase extends AbstractMapperByKingbase impleme
             where.append(" AND tenant_id LIKE ? ");
             paramList.add(tenant);
         }
-
-        
         if (!StringUtils.isBlank(dataId)) {
             where.append(" AND data_id LIKE ? ");
             paramList.add(dataId);
